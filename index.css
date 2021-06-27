@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #eee;
+}
+a{
+    color: #1a1e22;
+}
+.header{
+    height: 100px;
+    line-height: 100px;
+    background-color:rgb(99, 99, 238);
+    font-size: 20px;
+    color: #11151a;
+}
+.header .logo{
+    width: 40px;
+    height: 40px;
+    /* 内联元素的垂直方向 middle:沿着中线对齐 */
+    vertical-align: middle;
+}
+.left-menu{
+    background-color:rgb(148, 148, 233);
+    width:180px;
+    color: #1a1e22;
+    /* 整个屏幕的高度就是100vh */
+    height: calc(100vh - 100px);
+    font-size: 18px;
+    line-height: 40px;
+}
+.right-content{
+    position: absolute;
+    left: 180px;
+    top:100px;
+    font-size: 14px;
+    width:calc(100vw - 180px);
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background-color: rgb(195, 195, 252);
+}
+.left-menu dt{
+    padding-left: 10px;
+}
+.left-menu dd a{
+    width: 100%;
+    display: block;
+    padding-left: 40px;
+}
+#student-list{
+    height: 100%;
+    overflow-y: scroll;
+}
+#student-add{
+    height: 1000px;
+    overflow: hidden;
+}
+.active{
+    background-color: rgb(205, 211, 221);
+    color: rgb(64, 64, 233);
+}
+.active a{
+    color: rgb(64, 64, 233);
+}
+form{
+    width:400px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+form label:not(.sex){
+    display: inline-block;
+    width:100px;
+    text-align: right;
+    margin-right: 10px;
+}
+form div{
+    margin:10px 0;
+}
+.btn{
+    padding:5px 22px;
+    cursor: pointer;
+}
+#student-list table{
+    width:100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+#student-list table thead{
+    background-color: rgb(166, 166, 245);
+    color: rgb(82, 82, 245);
+}
+#student-list .operation{
+    padding: 5px 10px;
+    border: none;
+    /* outline:点击时候的外边框 */
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+#student-list .operation.edit{
+    background-color: rgb(30, 243, 30);
+}
+#student-list .operation.delete{
+    background-color: rgb(231, 86, 86);
+}
+.modal{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: regba(0,0,0,0.5);
+    display: none;
+}
+.modal-content{
+    width:340px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    padding: 10px;
+}
